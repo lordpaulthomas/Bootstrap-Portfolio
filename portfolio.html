@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Bootstrap Porfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link
+    <link
         href="https://fonts.googleapis.com/css?family=Creepster|Fredericka+the+Great|Vast+Shadow|Wallpoet&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -22,10 +23,12 @@
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse text-uppercase" style="font-size: 35px; font-family: 'Creepster', cursive;" id="navbarNav">
+        <div class="collapse navbar-collapse text-uppercase" style="font-size: 35px; font-family: 'Creepster', cursive;"
+            id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item activet">
-                    <a class="nav-link" style="color: chartreuse;" href="index.html">About <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" style="color: chartreuse;" href="index.html">About <span
+                            class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" style="color: chartreuse;" href="portfolio.html">Portfolio</a>
@@ -38,52 +41,54 @@
     </nav>
 
     <!-- This is the page header section -->
-    <div class="container-fluid p-1" style="background: url(./images/audiowaves.jpg); min-height: 100vh;">
-        <div class="row pl-4" style="font-family: 'Vast Shadow', cursive; color: chartreuse; font-size: 40px;">
+    <div class="container" style="background: url(./images/audiowaves.jpg); min-height: 100vh;">
+        <div class="row" style="font-family: 'Vast Shadow', cursive; color: chartreuse; font-size: 40px;">
             <h1>Portfolio</h1>
         </div>
+        <div class="contentContainer" style="margin: 8%;">
 
-        <!-- This is the content section -->
 
-        <div class="row text-light text-uppercase text-bold text-center mt-5">
-            <div class="col-1"></div>
-            <div class="col-3 bg-dark m-2"
-                style="height: 200px; width: 200px; background: url(./images/sky.jpg); background-position: center; background-size: cover;">
-                Music
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="card Shadow" style="width: 20rem;">
+                        <div class="inner">
+                            <img src="./images/liveshotwarped.JPG" class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Live Performances</h5>
+                            <a href="https://goodcharlotte.com">Link to My Band's Website</a>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ipsum totam natus commodi molestias. Perferendis,</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card Shadow" style="width: 20rem;">
+                        <div class="inner">
+                            <img src="./images/snowboarding.jpg" class="card-img-top" alt="...">  
+                        </div>          
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Travels</h5>
+                            <a href="https://twitter.com/BigPaulThomas">Link to My Twitter</a>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ipsum totam natus commodi molestias. Perferendis,</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card Shadow" style="width: 20rem;">
+                        <div class="inner">
+                            <img src="./images/atlas3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Music Producer</h5>
+                            <a href="https://soundcloud.com/ptgc">Link to My Music</a>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ipsum totam natus commodi molestias. Perferendis,</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-3 bg-dark m-2"
-                style="height: 200px; width: 200px; background: url(./images/foglake.jpg); background-position: center; background-size: cover;">
-                Art
-            </div>
-            <div class="col-3 bg-dark m-2"
-                style="height: 200px; width: 200px; background: url(./images/atlas3.jpg); background-position: center; background-size: cover;">
-                Live Performance
-            </div>
-            <div class="col-1"></div>
         </div>
-        <div class="row text-light text-uppercase text-bold text-center mt-5">
-            <div class="col-1"></div>
-            <div class="col-3 bg-dark m-2"
-                style="height: 200px; width: 200px; background: url(./images/sky.jpg); background-position: center; background-size: cover;">
-                Music
-            </div>
-            <div class="col-3 bg-dark m-2"
-                style="height: 200px; width: 200px; background: url(./images/foglake.jpg); background-position: center; background-size: cover;">
-                Art
-            </div>
-            <div class="col-3 bg-dark m-2"
-                style="height: 200px; width: 200px; background: url(./images/atlas3.jpg); background-position: center; background-size: cover;">
-                Live Performance
-            </div>
-            <div class="col-1"></div>
-        </div>
-
     </div>
-    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-        <div class="container text-center">
-            <small>Copyright &copy; Paul Thomas</small>
-        </div>
-    </footer>
-</body>
-
-</html>

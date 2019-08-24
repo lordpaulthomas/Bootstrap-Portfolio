@@ -8,9 +8,10 @@
     <title>Bootstrap Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link
+    <link
         href="https://fonts.googleapis.com/css?family=Creepster|Fredericka+the+Great|Vast+Shadow|Wallpoet&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -22,10 +23,12 @@
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse text-uppercase" style="font-size: 35px; font-family: 'Creepster', cursive;" id="navbarNav">
+        <div class="collapse navbar-collapse text-uppercase" style="font-size: 35px; font-family: 'Creepster', cursive;"
+            id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item activet">
-                    <a class="nav-link" style="color: chartreuse;" href="index.html">About <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" style="color: chartreuse;" href="index.html">About <span
+                            class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" style="color: chartreuse;" href="portfolio.html">Portfolio</a>
@@ -38,16 +41,18 @@
     </nav>
 
     <!-- This is the page header -->
-    <div class="container-fluid p-1" style="background: url(./images/audiowaves.jpg); min-height: 100vh;">
-        <div class="row pl-4" style="font-family: 'Vast Shadow', cursive; color: chartreuse; font-size: 40px;">
-            <h1>About Me</h1>
+    <div class="container" style="background: url(./images/audiowaves.jpg); min-height: 100vh;">
+        <div class="row" style="font-family: 'Vast Shadow', cursive; color: chartreuse; font-size: 40px;">
+            <div class="col-12 text-center border-light">
+                <h1>About Me</h1>
+            </div>
         </div>
         <!-- This is the content section -->
-        <div class="row">
+        <div class="row" style="width: 960px;">
             <div class="col-5">
                 <img src="./images/family.jpg" class="img-fluid" alt="Responsive image">
             </div>
-            <div class="col-7 text-light pr-5">
+            <div class="col-7 text-light pr-5 border-light" style="line-height: 30px; font-size: 20px;">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quasi non sint voluptate ea eos alias
                     accusamus suscipit quo vitae fuga deserunt doloribus, sunt aspernatur impedit officiis. Minima, ab
                     quasi!
@@ -64,7 +69,11 @@
             </div>
         </div>
     </div>
-     
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <small>Copyright &copy; Paul Thomas</small>
+        </div>
+    </footer>
 </body>
 
 </html>
